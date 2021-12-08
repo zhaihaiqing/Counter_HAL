@@ -1,0 +1,25 @@
+--cpu Cortex-M3
+"counter_hal\startup_stm32f103xb.o"
+"counter_hal\main.o"
+"counter_hal\stm32f1xx_it.o"
+"counter_hal\stm32f1xx_hal_msp.o"
+"counter_hal\stm32f1xx_hal_gpio_ex.o"
+"counter_hal\stm32f1xx_hal_iwdg.o"
+"counter_hal\stm32f1xx_hal_tim.o"
+"counter_hal\stm32f1xx_hal_tim_ex.o"
+"counter_hal\stm32f1xx_hal_uart.o"
+"counter_hal\stm32f1xx_hal.o"
+"counter_hal\stm32f1xx_hal_rcc.o"
+"counter_hal\stm32f1xx_hal_rcc_ex.o"
+"counter_hal\stm32f1xx_hal_gpio.o"
+"counter_hal\stm32f1xx_hal_dma.o"
+"counter_hal\stm32f1xx_hal_cortex.o"
+"counter_hal\stm32f1xx_hal_pwr.o"
+"counter_hal\stm32f1xx_hal_flash.o"
+"counter_hal\stm32f1xx_hal_flash_ex.o"
+"counter_hal\stm32f1xx_hal_exti.o"
+"counter_hal\system_stm32f1xx.o"
+--library_type=microlib --strict --scatter "Counter_HAL\Counter_HAL.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "Counter_HAL.map" -o Counter_HAL\Counter_HAL.axf
